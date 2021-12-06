@@ -15,6 +15,13 @@ public class perlinNoise : MonoBehaviour
     public float offsety = 100f;
     public float Speed = 1f;
 
+    
+
+     void Start()
+    {
+        
+    }
+
     void Update()
     {
         Terrain terrain = GetComponent<Terrain>();
