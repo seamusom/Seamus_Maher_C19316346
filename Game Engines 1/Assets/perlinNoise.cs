@@ -4,22 +4,23 @@ using UnityEngine;
 
 public class perlinNoise : MonoBehaviour
 {
-    private float pitch = .1f;
+   
     public int height = 256;
     public int depth = 20;
     public int width = 256;
 
     public float scale = 20f;
 
-    public float offsetx = 0f;
-    public float offsety = 0f;
+    public float offsetx = 100f;
+    public float offsety = 100f;
+    public float Speed = 1f;
 
     void Update()
     {
         Terrain terrain = GetComponent<Terrain>();
         terrain.terrainData = GenerateTerrain(terrain.terrainData);
         AudioSource audioSource = GetComponent<AudioSource>();
-        audioSource.pitch = pitch;
+        offsetx += Time.deltaTime * Speed;
     }
 
     TerrainData GenerateTerrain (TerrainData terrainData)
@@ -45,10 +46,12 @@ public class perlinNoise : MonoBehaviour
         return heights;
     }
 
+    
+
     float CalHeight(int x, int y)
     {
-        float xCoord = (float) x / width * scale * pitch;
-        float yCoord = (float) y / height * scale * pitch;
+        float xCoord = (float) x / width * scale + offsetx;
+        float yCoord = (float) y / height * scale + offsety;
 
         return Mathf.PerlinNoise(xCoord, yCoord);
     }
