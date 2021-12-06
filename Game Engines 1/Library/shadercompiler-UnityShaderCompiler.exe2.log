@@ -95,3 +95,6 @@ Cmd: disassembleShader
   api=4 insize=4930 outsize=8047 ok=1
 Cmd: disassembleShader
   api=4 insize=314 outsize=870 ok=1
+Unhandled exception: Read from shader compiler process failed: error -2147483644, 0/4 bytes read
+
+Quitting shader compiler process
