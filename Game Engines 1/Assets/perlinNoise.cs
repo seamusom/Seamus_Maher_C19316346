@@ -26,7 +26,21 @@ public class perlinNoise : MonoBehaviour
     {
         Terrain terrain = GetComponent<Terrain>();
         terrain.terrainData = GenerateTerrain(terrain.terrainData);
-        offsety -= Time.deltaTime * Speed; // moves the terrain in the y direction relative to the speed by time
+
+        if (Input.GetAxis("Mouse ScrollWheel")<0) //changes speed and direction of terrain
+        {
+            Speed += 1;
+        }
+
+        if (Input.GetAxis("Mouse ScrollWheel") > 0)
+        {
+            Speed -= 1;
+        }
+
+
+        offsety += Time.deltaTime * Speed; // moves the terrain in the y direction relative to the speed by time
+
+
     }
 
     TerrainData GenerateTerrain (TerrainData terrainData)
@@ -56,7 +70,7 @@ public class perlinNoise : MonoBehaviour
 
     float CalHeight(int x, int y)
     {
-        float xCoord = (float) x / width * scale + offsetx;
+        float xCoord = (float) x / width * scale + offsetx; 
         float yCoord = (float) y / height * scale + offsety;
 
         return Mathf.PerlinNoise(xCoord, yCoord);
