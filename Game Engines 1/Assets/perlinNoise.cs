@@ -26,8 +26,7 @@ public class perlinNoise : MonoBehaviour
     {
         Terrain terrain = GetComponent<Terrain>();
         terrain.terrainData = GenerateTerrain(terrain.terrainData);
-        AudioSource audioSource = GetComponent<AudioSource>();
-        offsetx += Time.deltaTime * Speed;
+        offsety -= Time.deltaTime * Speed; // moves the terrain in the y direction relative to the speed by time
     }
 
     TerrainData GenerateTerrain (TerrainData terrainData)
