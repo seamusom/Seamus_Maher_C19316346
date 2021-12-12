@@ -6,7 +6,7 @@ using UnityEngine;
 public class AudioData : MonoBehaviour
 {
     AudioSource _audioSource;
-    public static float[] _samples = new float[4096]; //can be accessed from any script
+    public static float[] _samples = new float[8192]; //can be accessed from any script
 
         void Start()
     {

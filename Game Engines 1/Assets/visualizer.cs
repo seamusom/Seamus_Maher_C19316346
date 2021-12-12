@@ -14,8 +14,8 @@ public class visualizer : MonoBehaviour
 
         for (int i = 0; i < 512; i++)
         {
-            Quaternion _rot = Quaternion.AngleAxis(i * -703125f, Vector3.forward);
-            GameObject _instanceCube = (GameObject)Instantiate(_cubePrefab, transform.position, _rot);
+            Quaternion _rot = Quaternion.AngleAxis(i * -703125f, Vector3.forward);//rotates each cube
+            GameObject _instanceCube = (GameObject)Instantiate(_cubePrefab, transform.position, _rot);//instastiates each cube
             _instanceCube.transform.position = this.transform.position;
             _instanceCube.transform.parent = this.transform;
             _instanceCube.name = "cube" + i;
@@ -35,7 +35,7 @@ public class visualizer : MonoBehaviour
         {
             if (_cube != null)
             {
-                _cube[i].transform.localScale = new Vector3(10, AudioData._samples [i] * _maxscale, 10);
+                _cube[i].transform.localScale = new Vector3(10, AudioData._samples [i] * _maxscale, 10);//changes the size of each cube relative to the samples frequency
             }
         }
     }
