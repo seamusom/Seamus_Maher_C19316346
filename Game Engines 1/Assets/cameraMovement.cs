@@ -27,7 +27,7 @@ public class cameraMovement : MonoBehaviour
             _cam.transform.position = _target.position;
 
             _cam.transform.Rotate(new Vector3(1, 0, 0), rotationAroundXAxis);
-            _cam.transform.Rotate(new Vector3(0, 1, 0), rotationAroundYAxis, Space.World); 
+            _cam.transform.Rotate(new Vector3(0, 1, 0), rotationAroundYAxis, Space.World);// rotates relative to the worlds y axis 
 
             _cam.transform.Translate(new Vector3(0, 0, -_distanceToTarget));
 

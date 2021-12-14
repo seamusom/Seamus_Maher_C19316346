@@ -9,9 +9,4 @@ public class color : MonoBehaviour
         GetComponent<Renderer>().material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f); //sets random color of material on the cube
     }
 
-    
-    void Update()
-    {
-        
-    }
-}
+ }

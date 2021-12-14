@@ -16,8 +16,8 @@ public class visualizer : MonoBehaviour
         {
             Quaternion _rot = Quaternion.AngleAxis(i * -703125f, Vector3.forward);//rotates each cube
             GameObject _instanceCube = (GameObject)Instantiate(_cubePrefab, transform.position, _rot);//instastiates each cube
-            _instanceCube.transform.position = this.transform.position;
-            _instanceCube.transform.parent = this.transform;
+            _instanceCube.transform.position = transform.position;
+            _instanceCube.transform.parent = transform;
             _instanceCube.name = "cube" + i;
             this.transform.eulerAngles = new Vector3(0, -0.703125f * i, 0);
             _instanceCube.transform.position = Vector3.forward * 100;
