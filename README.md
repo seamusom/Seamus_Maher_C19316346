@@ -20,6 +20,8 @@ For my project I built an audio responsive enviroment using infinitly generated 
 
 * And to speed up the movement of the terrain use the scroll wheel
 
+[here](https://youtu.be/SHKqKMl4WHg) is my project running
+
 # How It Works
 
 For the Visualizer first we get data from the audio using GetSpectrumData in our audio data script
@@ -180,5 +182,28 @@ public class visualizer : MonoBehaviour
    
 }
 ```
-     
+
+# References
+   
+  | Class | Source |
+  | ----- | ----- |
+  | perlinNoise.cs | Modified from [source](https://www.youtube.com/watch?v=bG0uEXV6aHQ) |
+  | color.cs | self written |
+  | visualizer.cs | Modified from [reference](https://docs.unity3d.com/ScriptReference/Object.Instantiate.html) and [reference](https://docs.unity3d.com/ScriptReference/Quaternion.html) |
+  | AudioData.cs | modified from [reference](https://docs.unity3d.com/ScriptReference/AudioSource.GetSpectrumData.html) |
+  | cameraMovment.cs | taken from [reference](https://www.emmaprats.com/p/how-to-rotate-the-camera-around-an-object-in-unity3d/) |
+  
+  | Asset | Source |
+  | ----- | ----- |
+  | music | taken from [here](https://www.youtube.com/watch?v=OgZ1doqlRpI) |
+  | skybox | taken from [here](https://assetstore.unity.com/packages/2d/textures-materials/sky/free-skyboxes-space-178953) |
+  
+  # What I am most proud of in this assignment
+  
+  the thing I am most proud of in this assignment is the instatiation of the prefab around the terrain as trying to get it working took a lot of time with many mistakes along the way.
+  
+  # Proposal
+  
+  For this project I will make an audio responsive enviroment using perlin noise with a terrain with a custom controller to change the enviroment
+  
   
