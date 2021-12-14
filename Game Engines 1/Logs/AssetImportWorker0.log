@@ -243,3 +243,36 @@ System memory in use after: 89.4 MB.
 Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1892.
 Total: 1.510600 ms (FindLiveObjects: 0.127000 ms CreateObjectMapping: 0.036100 ms MarkObjects: 1.189600 ms  DeleteObjects: 0.157200 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000894 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.754 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1361 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.5 MB.
+System memory in use after: 89.4 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1894.
+Total: 1.692300 ms (FindLiveObjects: 0.161700 ms CreateObjectMapping: 0.046800 ms MarkObjects: 1.303200 ms  DeleteObjects: 0.179700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1927.329718 seconds.
+  path: Assets/cameraMovement.cs
+  artifactKey: Guid(9dc538b9dd356684094cef2a43c500f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/cameraMovement.cs using Guid(9dc538b9dd356684094cef2a43c500f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77d637c15c5e8fa7c4281e74e9a39320') in 0.006929 seconds
+  Import took 0.008805 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
