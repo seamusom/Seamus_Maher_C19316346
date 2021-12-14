@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(AudioSource))] //to get audio 
+[RequireComponent(typeof(AudioSource))] //to add audio componant to object this is connected to 
 public class AudioData : MonoBehaviour
 {
     AudioSource _audioSource;
@@ -16,10 +16,10 @@ public class AudioData : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetSpectrumAudioSource(); 
+        GetAudioData(); 
     }
 
-    void GetSpectrumAudioSource()
+    void GetAudioData()
     {
         _audioSource.GetSpectrumData(_samples, 0, FFTWindow.Hamming);// gets data from audio source, 512 samples, fft window seperates frequencies, blackman used to reduce leakage
     }

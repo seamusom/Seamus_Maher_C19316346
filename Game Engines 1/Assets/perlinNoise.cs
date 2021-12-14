@@ -73,7 +73,7 @@ public class perlinNoise : MonoBehaviour
         float xCoord = (float) x / width * scale + offsetx; 
         float yCoord = (float) y / height * scale + offsety;
 
-        return Mathf.PerlinNoise(xCoord, yCoord);
+        return Mathf.PerlinNoise(xCoord, yCoord);//generates a random value between 0 and 1 on every point on the terrain to give use our heights and depths
     }
 
     
